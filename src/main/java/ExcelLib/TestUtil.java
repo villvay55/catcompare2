@@ -18,7 +18,7 @@ public class TestUtil {
 		try {
 			
 			
-			reader = new Xls_Reader("E://TestData//DIY Paint Grade Solid Wood Shaker.xlsx");
+			reader = new Xls_Reader("DIY Paint Grade Solid Wood Shaker.xlsx");
 		}catch (Exception e) {
 			
 			e.printStackTrace();

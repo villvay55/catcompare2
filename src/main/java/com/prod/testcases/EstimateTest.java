@@ -106,7 +106,7 @@ public class EstimateTest extends gudpplBaseSetup{
 	public Object[][] getLoginData(){
 		
 		
-		excelDataConfig = new ExcelDataConfig("E://TestData//DIY Paint Grade Solid Wood Shaker.xlsx");
+		excelDataConfig = new ExcelDataConfig("DIY Paint Grade Solid Wood Shaker.xlsx");
 		
 		
 		
