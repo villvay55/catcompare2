@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Gudppl Automation Event</td><td class="numi">7</td><td class="numi">5</td><td class="numi">0</td><td class="numi_attn">7</td><td class="numi">927.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Gudppl Automation Event &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="7">com.prod.testcases.EstimateTest</td><td><a href="#m1"><b>testSignIn</b>  </a></td><td class="numi">2</td><td>1530517429499</td><td class="numi">117914</td></tr><tr class="failedodd"><td><a href="#m2"><b>testSignIn</b>  </a></td><td class="numi">2</td><td>1530517429499</td><td class="numi">117914</td></tr><tr class="failedodd"><td><a href="#m3"><b>testSignIn</b>  </a></td><td class="numi">2</td><td>1530517429499</td><td class="numi">117914</td></tr><tr class="failedodd"><td><a href="#m4"><b>testSignIn</b>  </a></td><td class="numi">2</td><td>1530517429499</td><td class="numi">117914</td></tr><tr class="failedodd"><td><a href="#m5"><b>testSignIn</b>  </a></td><td class="numi">2</td><td>1530517429499</td><td class="numi">117914</td></tr><tr class="failedodd"><td><a href="#m6"><b>testSignIn</b>  </a></td><td class="numi">2</td><td>1530517429499</td><td class="numi">117914</td></tr><tr class="failedodd"><td><a href="#m7"><b>testSignIn</b>  </a></td><td class="numi">2</td><td>1530517429499</td><td class="numi">117914</td></tr>
+<tr><th colspan="4">Gudppl Automation Event &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="7">com.prod.testcases.EstimateTest</td><td><a href="#m8"><b>testSignIn</b>  </a></td><td class="numi">5</td><td>1530517251570</td><td class="numi">831963</td></tr><tr class="passedodd"><td><a href="#m9"><b>testSignIn</b>  </a></td><td class="numi">5</td><td>1530517251570</td><td class="numi">831963</td></tr><tr class="passedodd"><td><a href="#m10"><b>testSignIn</b>  </a></td><td class="numi">5</td><td>1530517251570</td><td class="numi">831963</td></tr><tr class="passedodd"><td><a href="#m11"><b>testSignIn</b>  </a></td><td class="numi">5</td><td>1530517251570</td><td class="numi">831963</td></tr><tr class="passedodd"><td><a href="#m12"><b>testSignIn</b>  </a></td><td class="numi">5</td><td>1530517251570</td><td class="numi">831963</td></tr><tr class="passedodd"><td><a href="#m13"><b>testSignIn</b>  </a></td><td class="numi">5</td><td>1530517251570</td><td class="numi">831963</td></tr><tr class="passedodd"><td><a href="#m14"><b>testSignIn</b>  </a></td><td class="numi">5</td><td>1530517251570</td><td class="numi">831963</td></tr>
+</table>
+<h1>Gudppl Automation Event</h1>
+<h2 id="m1">com.prod.testcases.EstimateTest:testSignIn</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>DIY (Do-It-Yourself)</td>
+<td>DIY Stain Grade Maple Natural Wood Flat Panel</td>
+<td>DIY Stain Grade Maple Solid Wood Shaker</td>
+<td>Glass Doors</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;div-materials-parts&apos;]/div[3]/div/div[3]/table/tbody/tr[2]/td[3]/div[1]/select/option[text() =  &apos;Glass Doors&apos; ]&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-BADJCCG&apos;, ip: &apos;169.254.90.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\vijay\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3db98e06c3db4d76fce317f7af907314
+*** Element info: {Using=xpath, value=.//*[@id=&apos;div-materials-parts&apos;]/div[3]/div/div[3]/table/tbody/tr[2]/td[3]/div[1]/select/option[text() =  &apos;Glass Doors&apos; ]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+<br/>at com.prod.estimate.CategoryPage.estimate(CategoryPage.java:100)
+<br/>at com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)
+<br/>at com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.prod.testcases.EstimateTest:testSignIn</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>DIY (Do-It-Yourself)</td>
+<td>DIY Stain Grade Maple Natural Wood Flat Panel</td>
+<td>DIY Stain Grade Maple Solid Wood Shaker</td>
+<td>Drawer Fronts</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<p>unknown error: Element &lt;div class=&quot;select_wrap&quot;&gt;...&lt;/div&gt; is not clickable at point (384, 594). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-BADJCCG&apos;, ip: &apos;169.254.90.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\vijay\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3db98e06c3db4d76fce317f7af907314</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at com.prod.estimate.CategoryPage.estimate(CategoryPage.java:99)
+<br/>at com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)
+<br/>at com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.prod.testcases.EstimateTest:testSignIn</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>DIY (Do-It-Yourself)</td>
+<td>DIY Stain Grade Maple Natural Wood Flat Panel</td>
+<td>DIY Stain Grade Maple Solid Wood Shaker</td>
+<td>Cover Panels</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.prod.testcases.EstimateTest:testSignIn</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>DIY (Do-It-Yourself)</td>
+<td>DIY Stain Grade Maple Natural Wood Flat Panel</td>
+<td>DIY Stain Grade Maple Solid Wood Shaker</td>
+<td>Cabinet Spacers</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.prod.testcases.EstimateTest:testSignIn</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>DIY (Do-It-Yourself)</td>
+<td>DIY Stain Grade Maple Natural Wood Flat Panel</td>
+<td>DIY Stain Grade Maple Solid Wood Shaker</td>
+<td>Doors</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.prod.testcases.EstimateTest:testSignIn</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>DIY (Do-It-Yourself)</td>
+<td>DIY Stain Grade Maple Natural Wood Flat Panel</td>
+<td>DIY Stain Grade Maple Solid Wood Shaker</td>
+<td>Toe Kicks</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.prod.testcases.EstimateTest:testSignIn</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>DIY (Do-It-Yourself)</td>
+<td>DIY Stain Grade Maple Natural Wood Flat Panel</td>
+<td>DIY Stain Grade Maple Solid Wood Shaker</td>
+<td>Crown/Light Valence (aka Deco)</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

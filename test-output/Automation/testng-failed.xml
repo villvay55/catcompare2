@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation]">
+  <parameter name="appURL" value="http://dev.villvay.com/thecabinetface"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="Gudppl Automation Event(failed)">
+    <classes>
+      <class name="com.prod.testcases.EstimateTest">
+        <methods>
+          <include name="testSignIn" invocation-numbers="1 2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.prod.testcases.EstimateTest -->
+    </classes>
+  </test> <!-- Gudppl Automation Event(failed) -->
+</suite> <!-- Failed suite [Automation] -->

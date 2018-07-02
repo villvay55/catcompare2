@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Automation">
+              <span class="suite-name border-failed">Automation</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Automation">
+                    <span>E:\Gudppl_Automation\cabinet\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Automation">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Automation">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Automation">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Automation">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Automation">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Automation">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation" class="hide-methods failed suite-Automation"> (hide)</a> <!-- hide-methods failed suite-Automation -->
+                      <a href="#" panel-name="suite-Automation" class="show-methods failed suite-Automation"> (show)</a> <!-- show-methods failed suite-Automation -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.prod.testcases.EstimateTest" hash-for-method="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.prod.testcases.EstimateTest" hash-for-method="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation" class="hide-methods passed suite-Automation"> (hide)</a> <!-- hide-methods passed suite-Automation -->
+                      <a href="#" panel-name="suite-Automation" class="show-methods passed suite-Automation"> (show)</a> <!-- show-methods passed suite-Automation -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.prod.testcases.EstimateTest" hash-for-method="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.prod.testcases.EstimateTest" hash-for-method="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.prod.testcases.EstimateTest" hash-for-method="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.prod.testcases.EstimateTest" hash-for-method="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation" title="com.prod.testcases.EstimateTest" hash-for-method="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation" class="panel Automation">
+          <div class="suite-Automation-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.prod.testcases.EstimateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">
+                  </a> <!-- testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Wood Shaker, Glass Doors)</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;div-materials-parts&apos;]/div[3]/div/div[3]/table/tbody/tr[2]/td[3]/div[1]/select/option[text() =  &apos;Glass Doors&apos; ]&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-BADJCCG&apos;, ip: &apos;169.254.90.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\vijay\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3db98e06c3db4d76fce317f7af907314
+*** Element info: {Using=xpath, value=.//*[@id=&apos;div-materials-parts&apos;]/div[3]/div/div[3]/table/tbody/tr[2]/td[3]/div[1]/select/option[text() =  &apos;Glass Doors&apos; ]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.prod.estimate.CategoryPage.estimate(CategoryPage.java:100)
+	at com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)
+	at com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)
+... Removed 28 stack frames<br/> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;div-materials-parts&apos;]/div[3]/div/div[3]/table/tbody/tr[2]/td[3]/div[1]/select/option[text() =  &apos;Glass Doors&apos; ]&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-BADJCCG&apos;, ip: &apos;169.254.90.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\vijay\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3db98e06c3db4d76fce317f7af907314
+*** Element info: {Using=xpath, value=.//*[@id=&apos;div-materials-parts&apos;]/div[3]/div/div[3]/table/tbody/tr[2]/td[3]/div[1]/select/option[text() =  &apos;Glass Doors&apos; ]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.prod.estimate.CategoryPage.estimate(CategoryPage.java:100)
+	at com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)
+	at com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br>org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br>org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br>org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)<br>com.prod.estimate.CategoryPage.estimate(CategoryPage.java:100)<br>com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)<br>com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">
+                  </a> <!-- testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Wood Shaker, Drawer Fronts)</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;select_wrap&quot;&gt;...&lt;/div&gt; is not clickable at point (384, 594). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-BADJCCG&apos;, ip: &apos;169.254.90.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\vijay\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3db98e06c3db4d76fce317f7af907314
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.prod.estimate.CategoryPage.estimate(CategoryPage.java:99)
+	at com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)
+	at com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)
+... Removed 28 stack frames<br/> org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;select_wrap&quot;&gt;...&lt;/div&gt; is not clickable at point (384, 594). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-BADJCCG&apos;, ip: &apos;169.254.90.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\vijay\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3db98e06c3db4d76fce317f7af907314
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.prod.estimate.CategoryPage.estimate(CategoryPage.java:99)
+	at com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)
+	at com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br>org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br>org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br>org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)<br>org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)<br>org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br>com.prod.estimate.CategoryPage.estimate(CategoryPage.java:99)<br>com.prod.estimate.CategoryPage.estimsteProcess(CategoryPage.java:32)<br>com.prod.testcases.EstimateTest.testSignIn(EstimateTest.java:83)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation-class-failed -->
+          <div class="suite-Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.prod.testcases.EstimateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">
+                  </a> <!-- testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Wood Shaker, Cover Panels)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">
+                  </a> <!-- testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Wood Shaker, Cabinet Spacers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">
+                  </a> <!-- testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Wood Shaker, Doors)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">
+                  </a> <!-- testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Wood Shaker, Toe Kicks)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)">
+                  </a> <!-- testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Wood Shaker, Crown/Light Valence (aka Deco))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation-class-passed -->
+        </div> <!-- panel Automation -->
+        <div panel-name="test-xml-Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Gudppl_Automation\cabinet\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Automation&quot;&gt;
+  &lt;parameter name=&quot;appURL&quot; value=&quot;http://dev.villvay.com/thecabinetface&quot;/&gt;
+  &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test name=&quot;Gudppl Automation Event&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.prod.testcases.EstimateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Gudppl Automation Event --&gt;
+&lt;/suite&gt; &lt;!-- Automation --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Gudppl Automation Event (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation');
+function tableData_Automation() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSignIn')
+data.setCell(0, 2, 'com.prod.testcases.EstimateTest')
+data.setCell(0, 3, 177927);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSignIn')
+data.setCell(1, 2, 'com.prod.testcases.EstimateTest')
+data.setCell(1, 3, 134226);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSignIn')
+data.setCell(2, 2, 'com.prod.testcases.EstimateTest')
+data.setCell(2, 3, 134165);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSignIn')
+data.setCell(3, 2, 'com.prod.testcases.EstimateTest')
+data.setCell(3, 3, 134034);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSignIn')
+data.setCell(4, 2, 'com.prod.testcases.EstimateTest')
+data.setCell(4, 3, 133690);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSignIn')
+data.setCell(5, 2, 'com.prod.testcases.EstimateTest')
+data.setCell(5, 3, 61656);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSignIn')
+data.setCell(6, 2, 'com.prod.testcases.EstimateTest')
+data.setCell(6, 3, 56254);
+window.suiteTableData['Automation']= { tableData: data, tableDiv: 'times-div-Automation'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
+              <div id="times-div-Automation">
+              </div> <!-- times-div-Automation -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.prod.testcases.EstimateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeTestBaseSetup(chrome, http://dev.villvay.com/thecabinetface)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16407 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</span>
+                <span class="method-start">94571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</span>
+                <span class="method-start">272500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</span>
+                <span class="method-start">334160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</span>
+                <span class="method-start">390415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</span>
+                <span class="method-start">524582 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</span>
+                <span class="method-start">658617 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignIn(DIY (Do-It-Yourself), DIY Stain Grade Maple Natural Wood Flat Panel, DIY Stain Grade Maple Solid Woo...)</span>
+                <span class="method-start">792308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">926536 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
